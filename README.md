@@ -8,6 +8,7 @@ Full Stack MERN application with a GraphQL API and Apollo Server
 ## Technologies
 Client Side:
 - React.js
+
 Server Side:
 - Apollo Server + GraphQL
 - Express.js / Node.js
