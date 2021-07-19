@@ -60,3 +60,5 @@ THEN I am logged out of the site and presented with a menu with the options Sear
 ![](./assets/login.png)
 - me with JWT token
 ![](./assets/me.png)
+- saveBook to a logged in user
+![](./assets/saveBook.png)
