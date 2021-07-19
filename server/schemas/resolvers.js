@@ -45,15 +45,16 @@ const resolvers = {
             return { token, user };
         },
 
-        saveBook: async (parent, {bookBody}, context) => {
+        saveBook: async (parent, args, context) => {
+            console.log(context.user)
             if (context.user) {
 
                 const updatedUser = await User.findByIdAndUpdate(
                   { _id: context.user._id },
-                  { $push: { bookBody} },
+                  { $push: {savedBooks: {...args}} },
                   { new: true }
                 );
-            
+                console.log(updatedUser)
                 return updatedUser;
               }
             

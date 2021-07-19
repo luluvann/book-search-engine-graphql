@@ -4,7 +4,7 @@ const typeDefs = gql`
   type Book {
     authors: String
     description: String!
-    bookId: String!
+    bookId: String
     image: String
     link: String
     title: String!
@@ -15,7 +15,7 @@ const typeDefs = gql`
     _id: ID
     username: String!
     email: String!
-    books: [Book]
+    savedBooks: [Book]
   }
 
   type Query {
